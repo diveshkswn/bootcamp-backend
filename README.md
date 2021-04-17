@@ -14,3 +14,15 @@
 ```
 npm install
 ```
+3. create a new file name .env in root directory
+4. Enter below to properties to that file
+
+```js
+PORT=<PORT_NUMBER>  //PORT=3001
+DATABASE_CONNECTION=mongodb+srv://<USER-NAME>:<PASSWORD>-Divesh@cluster0.htjup.mongodb.net/bootcamp?retryWrites=true&w=majority
+```
+5. After that application is ready to run. Just run it by running below command : 
+
+```
+node server.js
+```
