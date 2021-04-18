@@ -18,13 +18,14 @@ async function getAllBootcamps(req, res) {
   removeFields.forEach((val) => delete reqQuery[val]);
   let queryStr = JSON.stringify(reqQuery);
   queryStr = queryStr.replace(/\b(gt|gte|lt|lte|in)\b/g, (match) => `$${match}`);
-  console.log(queryStr);
+  console.log(`query String ${queryStr}`);
   let sortByStr;
   if (req.query.sort) {
     const sortByArr = req.query.sort.split(',');
     sortByStr = sortByArr.join(' ');
+    console.log(`sortByStr value : ${sortByStr}`);
   }
-  console.log(sortByStr);
+
   const bootcamps = await BootcampModel.find(JSON.parse(queryStr)).sort(sortByStr);
   res.status(200);
   res.json({
