@@ -5,6 +5,14 @@
 2. Express.js 
 3. MongoDB
 4. Mongoose
+5. Heroku for Deployment. Application deployed on : https://stark-dusk-95651.herokuapp.com/
+
+```
+GET https://stark-dusk-95651.herokuapp.com/api/v1/bootcamps/
+POST https://stark-dusk-95651.herokuapp.com/api/v1/bootcamps/
+DELETE https://stark-dusk-95651.herokuapp.com/api/v1/bootcamps/id
+PUT  https://stark-dusk-95651.herokuapp.com/api/v1/bootcamps/id
+```
 
 
 ## To run this application follow below steps : 
